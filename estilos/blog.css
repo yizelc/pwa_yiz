@@ -1,0 +1,78 @@
+
+
+#blog h3, h4{
+	text-align: center;
+}
+
+#blog .contenedor{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap; /*para que lo elementos que no caben se bajen*/
+}
+
+#blog article{
+	margin: 15px;
+}
+
+#blog img{
+	width: 100%;
+	max-width: 200px;
+}
+
+/* WEB RESPONSIVE para el playlist y la seccion del blog*/
+
+/*Telefono*/
+@media(min-width: 480px){
+   
+    #blog{
+        flex-wrap: wrap;
+      
+        
+    }
+    .contenedor{
+        float: none;
+        width: 100%;
+    }
+    
+	#pistas{
+        width:100%;
+        float: none;
+		
+	}
+
+}
+
+/*Responsivo para tablet*/
+
+@media(min-width: 768px){
+    #blog{
+        width:60%;
+        flex-wrap: wrap;
+
+    }
+	#pistas{
+        width:30%;
+        height: 180px;
+        float: right;
+        margin-right: 0;
+
+	}
+    
+}
+@media ( min-width: 1024px){
+    #blog{
+        
+    }
+    #pistas{
+        width: 25%;
+        height: 180px;
+        flex-wrap: wrap;
+        margin-right: 20px;
+
+	}
+     embed{
+        width: 250px;
+    }
+	
+}
+

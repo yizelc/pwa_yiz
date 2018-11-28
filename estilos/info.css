@@ -1,0 +1,40 @@
+#info{
+    /*color primario*/
+  
+	background:#024959;
+	color: #fff;
+    flex-wrap: wrap;
+	text-align:center;
+    padding: 20px;
+}
+#info .contenedor{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.info-pag{
+	margin: 20px;
+}
+
+.info-pag img{
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	border:7px solid #fff;
+}
+
+/*Responsivo para smartphone*/
+@media(min-width: 480px){
+	.info-pag{
+		width: 40%;
+	}
+
+}
+
+/*Responsivo para PC*/
+@media(min-width: 1024px){
+	.info-pag{
+		width: auto;
+	}
+
+}

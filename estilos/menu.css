@@ -1,0 +1,151 @@
+#menu-bar{
+	display: none;
+}
+
+header label{
+	float: right;
+	font-size:28px;
+	margin:  6px 0;
+	cursor: pointer;
+
+}
+
+.menu{
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	
+	/*azul menu*/
+		background:#024959;
+
+/*para que aparesca y desaparesca el menu horizontal*/
+	transition: all 0.5s;
+	transform: translateX(-100%);
+}
+
+.menu ul li{
+	height: auto;
+
+}
+.menu ul li{
+	height: auto;
+
+}
+/*estilos de los submenu*/
+
+header div nav ul li:hover .children{
+	display: block;
+
+}
+header div nav  ul li .children{
+	display: none;
+
+	/*Verde*/
+	background:#689F38;
+	position: absolute;
+	width: 200%;
+	z-index: 1000;
+
+}
+
+.children li{
+	font-size: 15px;
+	padding:10px;
+	border-bottom: 1px solid rgba(255,255,255, .3);
+	font-family: 'verdana', 'Arial', serif;
+	height: 100px;
+}
+li:hover{
+	/*Rojo*/
+	background: #883217;
+}
+
+header div nav  ul li .children li{
+	height: calc(100% - 50px);
+	display: block;
+}
+
+header div nav ul li .children li{
+	width: 100%;
+	position: relative;
+}
+
+
+/*fin submenu*/
+
+
+.menu ul li a{
+	display: block;
+	color: #fff;
+	height: 50px;
+	text-decoration:none;
+	padding: 15px;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.menu ul li a:hover{
+	background:#EF6C00;
+}
+
+/*para que desaparesca el menu al dar clic*/
+/*cuando de clic en el label se ctiva el input*/
+#menu-bar:checked ~ .menu{
+	transform: translateX(0%);
+}
+
+
+/*estilos para hacer web responsive*/
+
+/*paraPC*/
+@media (min-width: 1024px){
+	.menu{
+		position: static;
+		width: auto;
+		height: auto;
+		transform: translateX(0%);
+		float: right;
+		display: flex;
+	}	
+	.menu ul li{
+	display: inline-block;
+	position: relative;
+}
+	.menu  ul li a{
+		border: none;
+	}
+
+	header label{
+		display: none;
+	}
+}
+
+@media (max-height: 400px){
+
+	header div nav {
+		height: calc(100% - 50px);
+		overflow: scroll;
+	}
+}
+
+@media ( max-width: 1024px){
+		header div  ul li{
+	/*para abarcar el menu de lado derecho*/
+		display: block;
+		float: none;
+		border-bottom: 1px solid rgba(255,255,255, .3);
+
+	}
+
+	header  div  ul li a{
+		display: block;
+	}
+
+	header div nav ul li .children{
+		width: 100%;
+		position: relative;
+	}
+
+
+}

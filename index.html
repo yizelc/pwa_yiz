@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+	<title>pagina principal</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilos/menu.css">
+	<link rel="stylesheet" type="text/css" href="estilos/contenedor.css">
+	<link rel="stylesheet" type="text/css" href="estilos/banner.css">
+	<link rel="stylesheet" type="text/css" href="estilos/blog.css">
+	<link rel="stylesheet" type="text/css" href="estilos/info.css">
+
+	<!-- Cargar el Manifiesto de configuración-->
+	 <link rel="manifest" href="manifest.json"/>
+	 <!--añadiendo un favicon -->
+	 <link rel="shortcut icon" type="image/png" href="imagenes/favicon.png" />
+	<!-- indicar que es una pwa-->
+	<meta name="HandheldFriendly" content="true"/>
+	<!-- pagina optimizada para movile -->
+	<meta name="MobileOptimized" content="width"/>
+	<!-- script js para el suavizado al visitar los services-->
+	<script src="main.js"></script>
+
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+
+	<header>
+		<div class="contenedor">
+			<h1>Logotipo</h1>
+			<input type="checkbox" id="menu-bar" name="">
+			<label for="menu-bar">menu</label>
+
+			<nav class="menu">
+				<ul>
+					<li class="submenu">
+						<a href="">Inicio</a>
+						<ul class="children">
+							<li>Summenu1</li>
+							<li>Summenu2</li>
+							<li>Summenu3</li>
+							<li>Summenu4</li>
+						</ul>
+					</li>
+					<li><a href="">Carrera</a></li>
+					<li><a href="">Materias</a></li>
+					<li><a href="">Horarios</a></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</nav>
+
+		</div>
+	</header>
+
+	<main>
+		<section id="banner">
+			<img src="imagenes/fondo.jpg">
+			<div class="contenedor">
+				<h2>subtitulos :) </h2>
+				<p>¿hola, como estas?</p>
+				<a href="#"> leer mas</a>
+			</div>
+
+
+		</section>
+
+
+		<section id="bienvenidos">
+			<h2>bienvenidos</h2>
+			<p>bienvenidosbienvenidos bienvenidos text- bienvenidos bienvenidos bienvenidos bienvenidos</p>
+            <p>bienvenidosbienvenidos bienvenidos text- bienvenidos bienvenidos bienvenidos bienvenidos</p>
+            <p>bienvenidosbienvenidos bienvenidos text- bienvenidos bienvenidos bienvenidos bienvenidos</p>
+            <p>bienvenidosbienvenidos bienvenidos text- bienvenidos bienvenidos bienvenidos bienvenidos</p>
+            <p>bienvenidosbienvenidos bienvenidos text- bienvenidos bienvenidos bienvenidos bienvenidos</p>
+            <p>bienvenidosbienvenidos bienvenidos text- bienvenidos bienvenidos bienvenidos bienvenidos</p>
+            <p>bienvenidosbienvenidos bienvenidos text- bienvenidos bienvenidos bienvenidos bienvenidos</p>
+		</section>
+
+		<div id="blog" style="background-color:dimgray; width: 100%; float: left">
+			<div class="contenedor" style="width: 70%;    float: left">
+
+				<article>
+					<img src="imagenes/a1.jpg" >
+					<h4>imagen 1</h4>
+				</article>
+				<article>
+					<img src="imagenes/a2.jpg">
+					<h4>imagen 2</h4>
+				</article>
+				<article>
+					<img src="imagenes/a3.jpg" >
+					<h4>imagen 3</h4>
+				</article>
+			</div>
+
+        <div id="pistas" >
+
+            <embed src="dewplayer-multi.swf" width="240px"; height="20px"  flashvars="mp3=pistas/im_yours.mp3|pistas/give_me_love.mp3|pistas/photograph.mp3|pistas/something_just_like_this.mp3">
+            <ul style="list-style: none; margin-left: 10px; text-decoration: overline">
+                <li >
+                    Im yours
+                </li>
+                <li>
+                    Give me Love
+                </li>
+                <li>
+                    Photograph
+                </li>
+                <li>
+                    something just like this
+                </li>
+            </ul>
+
+        </div>
+            <!-- TERMINA SECCION DE PISTAS-->
+        </div>
+
+		<!--PISTAS -->
+
+		<section id="info">
+            <h3> Para muchos de nosotros las paginas web son de mucho interes</h3>
+
+			<div class="contenedor">
+				<div class="info-pag">
+					<img src="imagenes/p1.jpg">
+					<h4>pie 1</h4>
+				</div>
+				<div class="info-pag">
+					<img src="imagenes/p2.jpg">
+					<h4>pie 2</h4>
+				</div>
+				<div class="info-pag">
+					<img src="imagenes/p3.jpg">
+					<h4>pie 3</h4>
+				</div>
+				<div class="info-pag">
+					<img src="imagenes/p4.jpg">
+					<h4>pie 4</h4>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="contenedor">
+			<p class="copy"> My pagina &copy; 2018</p>
+
+			<div class="sociales">
+				<a href="">facebook</a>
+				<a href="">Twiter</a>
+				<a href="">Instagram</a>
+				<a href="">whatsap</a>
+			</div>
+		</div>
+	</footer>
+
+
+</body>
+</html>

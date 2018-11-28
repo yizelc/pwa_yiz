@@ -1,0 +1,93 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+	width: 100%;
+	height: 50px;
+	background-color: #024959;
+	color: #fff;
+
+	/*para que el menu este por delante de los elementos y no se tape*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+
+}
+
+.contenedor{
+	width: 98%;
+	margin: auto;
+
+}
+
+h1{
+	float: left;
+}
+
+header .contenedor{
+	display: table;
+}
+
+section{
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+#bienvenidos{
+	text-align: center;
+}
+
+
+
+/*estlos para el footer*/
+footer .contenedor{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-bottom: 25px;
+}
+.copy{
+	font-size:20px;
+}
+
+.sociales{
+
+	width: 100%;
+	text-align:center;
+	font-size: 28px;
+}
+footer{
+	background:#B2DFDB;
+}
+.sociales a{
+	color: #333;
+	text-decoration: none;
+}
+
+/*responsivo para PC*/
+
+@media(min-width: 1024px){
+	.contenedor{
+		width: 1000px;
+	}
+
+}
+
+/*responsivo para tablet*/
+
+@media(min-width: 768px){
+	.sociales{
+		width: auto;
+
+	}
+	footer .contenedor{
+		justify-content: space-between;
+	}
+	
+}
+
